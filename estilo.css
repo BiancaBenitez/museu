@@ -1,0 +1,10 @@
+/* header (cabeçalho)
+   nav (navegação)
+   article (conteudos q representam uma postagem){section (seções dentro do conteudo)}
+   time (para datas e horas)
+   aside (baners e menus laterais)
+   footer (rodapé) */
+
+   #cabecalho {
+    background-color: green;
+   }
