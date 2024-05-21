@@ -10,15 +10,20 @@ window.addEventListener('scroll', () => {
     estatuaDireita.style.left = value * 1.5 + 'px';
 });
 
-let next = document.querySelector('.next')
-let prev = document.querySelector('.prev')
+let count = 1;
+document.getElementById("radio1").checked = true;
 
-next.addEventListener('click', function(){
-    let items = document.querySelectorAll('.item')
-    document.querySelector('.slide').appendChild(items[0])
-})
+setInterval( function(){
+  nextImage();
+},5000)
 
-prev.addEventListener('click', function(){
-    let items = document.querySelectorAll('.item')
-    document.querySelector('.slide').prepend(items[items.length - 1])
-})
+function nextImage(){
+    count++;
+    if(count>4){
+        count = 1;
+    }
+
+
+document.getElementById("radio"+count).checked = true;
+
+}
