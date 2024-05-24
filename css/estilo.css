@@ -119,12 +119,21 @@
       position: relative;
       background-color: #93353b;
       padding: 20px;
+      width: 1900px;
+      height: 600px;
+     
       
    }
 
   
 
    /*carrossel de imagens  */
+   .area-fotos {
+      display: inline-block;
+      width: 810px;
+      height: 410px;
+      padding: 12.5px;
+   }
  
    .slider {
       
@@ -133,9 +142,11 @@
       background: #fff;
       overflow: hidden;
       background-color: #93353b;
+      margin-bottom: 20px;
+      
 
    }
-
+   
    .slides {
       width: 400%;
       height: 400px;
@@ -154,6 +165,7 @@
 
    .slide img {
       width: 800px;
+      
    }
 
    .manual-navigation {
@@ -234,15 +246,31 @@
    }
 
  /* Estilos das exposições em destaque */
+ .main-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.content-header {
+   display: inline-block;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   vertical-align: top;
+   padding: 12px 0px 0px 12.5px;
+}
+
 .header-right {
-   width: 35%;
+   width: 500px;
    background: #fff;
    padding: 20px;
    border-radius: 10px;
+   height: 402px;
 }
 
-.highlighted-exhibitions h2 {
-   font-size: 24px;
+.highlighted-exhibitions h1 {
+   font-size: 39px;
    margin-bottom: 10px;
    color: #93353b;
 }
@@ -289,12 +317,23 @@
       flex-direction: column;
    }
 
-   .slider {
-      width: 100%;
-      margin-bottom: 20px;
-   }
+   
 
    .header-right {
       width: 100%;
    }
+}
+
+R1 {
+   font-size: 15px;
+   color: #2c0909;
+   font-weight: 600;
+
+}
+
+/* mapa */
+#mapa{
+   display: inline-block;
+   vertical-align: top;
+   padding: 20px 0px 12.5px 12.5px;
 }

@@ -18,7 +18,7 @@
 
 <body>
     <!-- Início navegação -->
-    <header>
+    <header class="main-header">
         <h2 class="logo">
             logo
         </h2>
@@ -37,101 +37,125 @@
     <!-- Fim parallax -->
     <!-- Início apresentação -->
     <section class="sec cor">  
+       
+        <!-- Slide de fotos  -->
+        <div class="area-fotos">
+            <div class="slider" >
+                <div class="slides">
+                    <!-- Radio buttons -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!-- Fim radio buttons -->
+                    <!-- Slide imagens -->
+                    <div class="slide first">
+                        <img src="imagens/800 x 400.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/800 x 400.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/800 x 400.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/800 x 400.png" alt="">
+                    </div>
+                    <!-- Fim slide imagens -->
+                    <!-- navegação automáica -->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
 
-        <div class="slider" >
-
-            <div class="slides">
-                <!-- Radio buttons -->
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-                <!-- Fim radio buttons -->
-                <!-- Slide imagens -->
-                <div class="slide first">
-                    <img src="imagens/imagem1.jpg" alt="">
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
                 </div>
-                <div class="slide">
-                    <img src="imagens/imagem5.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="imagens/imagem5.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="imagens/imagem4.jpg" alt="">
-                </div>
-                <!-- Fim slide imagens -->
-                <!-- navegação automáica -->
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
-
             </div>
-
-            <div class="manual-navigation">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
-
+      </div>
+        <!-- Fim slide de fotos  -->
+         <!-- inicio conteudo meio -->
+         <div class="content-header">
+            <div class="header-content">
+                <div class="header-right">
+                    <div class="highlighted-exhibitions">
+                        <h1>Exposições em destaques</h1>
+                        <ul>
+                            <li>
+                                <a href="#exhibition1">
+                                    <img src="https://via.placeholder.com/50" alt="Exposição 1" class="exhibition-icon">
+                                    <div class="exhibition-info">
+                                        <h3>Arte Contemporânea</h3>
+                                        <p>Até 30 de Junho.</p>
+                                        <span>R$ 38,00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#exhibition2">
+                                    <img src="https://via.placeholder.com/50" alt="Exposição 2" class="exhibition-icon">
+                                    <div class="exhibition-info">
+                                        <h3>Fotografia Histórica</h3>
+                                        <p>De 15 de Julho a 15 de Setembro.</p>
+                                        <span>R$ 40,00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#exhibition3">
+                                    <img src="https://via.placeholder.com/50" alt="Exposição 3" class="exhibition-icon">
+                                    <div class="exhibition-info">
+                                        <h3>Esculturas Modernas</h3>
+                                        <p>Até 10 de Agosto.</p>
+                                        <span>R$ 55,00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#exhibition4">
+                                    <img src="https://via.placeholder.com/50" alt="Exposição 4" class="exhibition-icon">
+                                    <div class="exhibition-info">
+                                        <h3>Esculturas Modernas</h3>
+                                        <p>Até 10 de Agosto.</p>
+                                        <span>R$ 20,00</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-           
-
+        </div>  
+        <!-- Fim conteudo meio -->
+        <!-- Início mapa -->
+        <div id="mapa">
+            <h3>Mapa</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1289.9642823268664!2d-50.44401135476813!3d-21.211984743830282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x949643ef6e8b9273%3A0x46622cff0ab3433d!2sIE%20Manoel%20Bento%20da%20Cruz!5e0!3m2!1spt-BR!2sbr!4v1716582706925!5m2!1spt-BR!2sbr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-             
-         <!-- inicio conteudo lateral direita -->
-        <div class="header-content">
-                    
-            <div class="header-right">
-                <div class="highlighted-exhibitions">
-                    <h2>Exposições em Destaque</h2>
-                    <ul>
-                        <li>
-                            <a href="#exhibition1">
-                                <img src="https://via.placeholder.com/50" alt="Exposição 1" class="exhibition-icon">
-                                <div class="exhibition-info">
-                                    <h3>Arte Contemporânea</h3>
-                                    <p>Até 30 de Junho.</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#exhibition2">
-                                <img src="https://via.placeholder.com/50" alt="Exposição 2" class="exhibition-icon">
-                                <div class="exhibition-info">
-                                    <h3>Fotografia Histórica</h3>
-                                    <p>De 15 de Julho a 15 de Setembro.</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#exhibition3">
-                                <img src="https://via.placeholder.com/50" alt="Exposição 3" class="exhibition-icon">
-                                <div class="exhibition-info">
-                                    <h3>Esculturas Modernas</h3>
-                                    <p>Até 10 de Agosto.</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-             
-                
-            
-            
-        
+        <!-- Fim mapa -->
     </section>
     <!-- Fim apresentação -->
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloremque beatae, hic harum quidem iure consequuntur ratione, atque accusantium, quam sequi facilis assumenda. Quia, alias dignissimos. Autem consectetur quis possimus nesciunt deleniti laboriosam ipsa illo, delectus, ex neque laudantium enim? Tenetur eos provident voluptate eum officia, laboriosam atque consectetur omnis, doloribus totam porro alias quae deleniti iusto, ratione nam! Tempora quasi magni doloribus nesciunt voluptas voluptates, vitae at animi quidem unde deleniti alias, illum, quas sed atque. Magnam quam impedit recusandae exercitationem id pariatur cupiditate, eos expedita rerum fuga iste aliquam perspiciatis consectetur, harum illo ut voluptate architecto voluptatem sed neque atque. Sed, eum quibusdam! Eligendi ratione, nulla tempora, pariatur nostrum neque tenetur quas nihil cumque, accusamus provident! Quaerat laboriosam qui totam cupiditate deserunt illo sunt. Praesentium ipsum quos ut consectetur, tempore porro autem laborum, dolore, sunt unde architecto animi laboriosam! Ea saepe natus vel minima ipsam possimus voluptatibus illo aut! Maxime eius consequuntur perspiciatis laudantium ut blanditiis, esse rerum eligendi expedita eaque minus vero iste voluptate quisquam aperiam non quod delectus? Fugiat eligendi a error quasi iste, atque explicabo! Temporibus similique nulla, quasi ipsum eaque totam veritatis autem minus corrupti ea sunt? Magnam alias quo laudantium! Et tempora omnis, officia ut voluptates nostrum, error, sit aut cum dolores distinctio? Numquam tempore natus sapiente nam architecto! Consequuntur, porro! Quae, recusandae nobis repudiandae voluptates est vero saepe quasi odio laborum natus magni dolor praesentium maiores facilis, sint excepturi ipsam beatae nulla dolorum? Officiis saepe, quae repellat vitae provident facilis possimus, consequuntur reiciendis dolorum rerum quod? Magni perferendis temporibus vel, veniam blanditiis sequi est quas, reiciendis fugit minus voluptatem libero quibusdam! Fuga quasi aliquid consequatur laudantium deleniti perspiciatis unde, veniam nam blanditiis accusamus possimus iure recusandae cupiditate distinctio modi debitis magni nulla exercitationem tempore atque ratione dolorem. Amet vero sapiente dolores accusamus.
-    </p>
-    
-
+    <!-- Início footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2024 Museu Nacional. Todos os direitos reservados.</p>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum ex facilis delectus recusandae modi officiis commodi minima? Nam iusto distinctio est laboriosam tempora molestias itaque assumenda eum voluptates laudantium animi laborum accusamus adipisci sunt beatae, placeat vero, perspiciatis non. Ipsum voluptatem reprehenderit voluptatibus deserunt. Culpa hic eveniet nihil. Officiis sit dignissimos laborum provident soluta officia dolores, accusamus, excepturi, non ab sunt placeat autem consequatur! Quae odio, est quo blanditiis fuga sapiente asperiores consequuntur similique, eligendi iure ab. Nobis sequi voluptas eius animi voluptatum veniam numquam at repellat nostrum repellendus aliquid consectetur eum facere dolor porro doloremque ex, repudiandae accusamus? Dolorum impedit minus mollitia delectus nisi. Quisquam ratione minima voluptatum debitis atque rerum voluptate ad impedit corrupti perferendis neque exercitationem tenetur cum in dolores dicta, hic velit doloremque optio quo odio. Eos accusantium dolore harum repudiandae, dignissimos, tempore impedit voluptatem, error beatae incidunt eveniet quae ut nostrum. Iste eligendi rerum, laborum omnis, voluptatibus dolore voluptates et porro expedita aliquid reprehenderit! Esse quae saepe ipsum quia odio doloribus consectetur! Quo voluptate, blanditiis doloribus aperiam illo optio, dicta, minus neque odio alias quidem voluptatibus maxime quibusdam adipisci cupiditate ipsam sequi? Soluta, repellendus ratione perspiciatis libero facere optio nostrum quos aliquam eligendi sed ad?Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat amet esse nihil facilis minus, deleniti quas et iusto ad cumque quam autem! Architecto commodi recusandae accusantium quas non ipsam officiis.</p>
+    </footer>
+    <!-- Fim footer -->
     <script src="script.js"></script>
 </body>
 </html>
