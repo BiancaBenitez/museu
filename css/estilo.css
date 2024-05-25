@@ -1,5 +1,5 @@
 
-   /*Ínicio pagina parallax */
+   /* Ínicio pagina parallax  */
 
    
    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -35,14 +35,14 @@
 
    .logo {
       font-size: 2em;
-      color: #fff;
+      color: #7a7a7a;
       user-select: none;
    }
 
    .navegacao a {
       position: relative;
       font-size: 1.1em ;
-      color: #fff;
+      color: #1a1a1a;
       font-weight: 600;
       text-decoration: none;
       margin-left: 20px;
@@ -52,7 +52,7 @@
 
    .navegacao a:hover,
    .navegacao a.ativo {
-      color: #333;
+      color: #fff;
    }
  
    .navegacao a span {
@@ -61,7 +61,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: #fff;
+      background: #000000;
       border-radius: 30px;
       z-index: -1 ;
       transform: scale(0);
@@ -76,7 +76,7 @@
       transform: scale(1);
       opacity: 1;
    }
-
+    /* 
    .parallax {
       position: relative;
       display: flex;
@@ -127,7 +127,7 @@
 
   
 
-   /*carrossel de imagens  */
+   /*carrossel de imagens  
    .area-fotos {
       display: inline-block;
       width: 810px;
@@ -245,7 +245,7 @@
       background-color: #fff;
    }
 
- /* Estilos das exposições em destaque */
+ /* Estilos das exposições em destaque 
  .main-header {
    display: flex;
    justify-content: space-between;
@@ -331,14 +331,14 @@ R1 {
 
 }
 
-/* mapa */
+/* mapa 
 #mapa{
    display: inline-block;
    vertical-align: top;
    padding: 20px 0px 12.5px 12.5px;
 }
 
-/* rodapé */
+/* rodapé 
 
 .footer-content{
    background-color: #333;

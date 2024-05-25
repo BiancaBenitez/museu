@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/estilo.css"> 
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Museu Nacional</title>
+    <title>WonderLore</title>
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" >
 
@@ -15,148 +15,166 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
     <![endif]-->
 </head>
-
 <body>
-    <!-- Início navegação -->
-    <header class="main-header">
-        <h2 class="logo">
-            logo
-        </h2>
-        <nav class="navegacao">
-            <a href="home.html" class="ativo">Home <span></span></a>
-            <a href="exposicoes.html">Exposições <span></span></a>
-        </nav>
-    </header>    
-    <!-- Fim navegação -->
-    <!-- Início parallax -->
-    <section class="parallax">
-        <h2 id="text">MUSEU NACIONAL</h2>
-        <img src="imagens/M (4).png" id="estatua-esquerda">
-        <img src="imagens/M (2).png" id="estatua-direita">
-    </section>
-    <!-- Fim parallax -->
-    <!-- Início apresentação -->
-    <section class="sec cor">  
-       
-        <!-- Slide de fotos  -->
-        <div class="area-fotos">
-            <div class="slider" >
-                <div class="slides">
-                    <!-- Radio buttons -->
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <input type="radio" name="radio-btn" id="radio4">
-                    <!-- Fim radio buttons -->
-                    <!-- Slide imagens -->
-                    <div class="slide first">
-                        <img src="imagens/800 x 400.png" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="imagens/800 x 400.png" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="imagens/800 x 400.png" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="imagens/800 x 400.png" alt="">
-                    </div>
-                    <!-- Fim slide imagens -->
-                    <!-- navegação automáica -->
-                    <div class="navigation-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-                        <div class="auto-btn4"></div>
-                    </div>
-                </div>
-
-                <div class="manual-navigation">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
-                </div>
+    <header class="inicio">
+        <section class="abas">
+            <h2 class="logo">Logo</h2>
+            <nav class="navegacao">
+                <a href="home.html" class="ativo">Home <span></span></a>
+                <a href="sobre.html">Sobre Nós <span></span></a>
+                <a href="contato.html">Contato <span></span></a>
+            </nav>
+        </section>
+        <section>
+            <img src="" alt="">
+            <div class="circulo1">
+                <h1>Museu WonderLore</h1>
+                <p>Segundo Silva e Costa (2021), em sua obra sobre o papel dos museus e na preservação da diversidade cultural,
+                    o Museu WonderLore se destaca por sua capcidade de celebrar a diversidade cultural e ariqueza do patrimônio
+                    humano.
+                </p>
+                <button class="button">
+                    SAIBA MAIS
+                </button>
             </div>
-      </div>
-        <!-- Fim slide de fotos  -->
-         <!-- inicio conteudo meio -->
-         <div class="content-header">
-            <div class="header-content">
-                <div class="header-right">
-                    <div class="highlighted-exhibitions">
-                        <h1>Exposições em destaques</h1>
-                        <ul>
-                            <li>
-                                <a href="#exhibition1">
-                                    <img src="https://via.placeholder.com/50" alt="Exposição 1" class="exhibition-icon">
-                                    <div class="exhibition-info">
-                                        <h3>Arte Contemporânea</h3>
-                                        <p>Até 30 de Junho.</p>
-                                        <span>R$ 38,00</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#exhibition2">
-                                    <img src="https://via.placeholder.com/50" alt="Exposição 2" class="exhibition-icon">
-                                    <div class="exhibition-info">
-                                        <h3>Fotografia Histórica</h3>
-                                        <p>De 15 de Julho a 15 de Setembro.</p>
-                                        <span>R$ 40,00</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#exhibition3">
-                                    <img src="https://via.placeholder.com/50" alt="Exposição 3" class="exhibition-icon">
-                                    <div class="exhibition-info">
-                                        <h3>Esculturas Modernas</h3>
-                                        <p>Até 10 de Agosto.</p>
-                                        <span>R$ 55,00</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#exhibition4">
-                                    <img src="https://via.placeholder.com/50" alt="Exposição 4" class="exhibition-icon">
-                                    <div class="exhibition-info">
-                                        <h3>Esculturas Modernas</h3>
-                                        <p>Até 10 de Agosto.</p>
-                                        <span>R$ 20,00</span>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        </section>
+        <section>
+            <div class="hidden">
+                <p>Prometemos não apenas ser educativa, mas amb~em uma aventura inesquecível, tranformando cada visita em uma exploração 
+                    única de criatividad e histório.
+                </p>
+                <div class="circulo2"></div>
             </div>
-        </div>  
-        <!-- Fim conteudo meio -->
-        <!-- Início mapa -->
-        <div id="mapa">
-            <h3>Mapa</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1289.9642823268664!2d-50.44401135476813!3d-21.211984743830282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x949643ef6e8b9273%3A0x46622cff0ab3433d!2sIE%20Manoel%20Bento%20da%20Cruz!5e0!3m2!1spt-BR!2sbr!4v1716582706925!5m2!1spt-BR!2sbr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <!-- Fim mapa -->
-    </section>
-    <!-- Fim apresentação -->
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum ex facilis delectus recusandae modi officiis commodi minima? Nam iusto distinctio est laboriosam tempora molestias itaque assumenda eum voluptates laudantium animi laborum accusamus adipisci sunt beatae, placeat vero, perspiciatis non. Ipsum voluptatem reprehenderit voluptatibus deserunt. Culpa hic eveniet nihil. Officiis sit dignissimos laborum provident soluta officia dolores, accusamus, excepturi, non ab sunt placeat autem consequatur! Quae odio, est quo blanditiis fuga sapiente asperiores consequuntur similique, eligendi iure ab. Nobis sequi voluptas eius animi voluptatum veniam numquam at repellat nostrum repellendus aliquid consectetur eum facere dolor porro doloremque ex, repudiandae accusamus? Dolorum impedit minus mollitia delectus nisi. Quisquam ratione minima voluptatum debitis atque rerum voluptate ad impedit corrupti perferendis neque exercitationem tenetur cum in dolores dicta, hic velit doloremque optio quo odio. Eos accusantium dolore harum repudiandae, dignissimos, tempore impedit voluptatem, error beatae incidunt eveniet quae ut nostrum. Iste eligendi rerum, laborum omnis, voluptatibus dolore voluptates et porro expedita aliquid reprehenderit! Esse quae saepe ipsum quia odio doloribus consectetur! Quo voluptate, blanditiis doloribus aperiam illo optio, dicta, minus neque odio alias quidem voluptatibus maxime quibusdam adipisci cupiditate ipsam sequi? Soluta, repellendus ratione perspiciatis libero facere optio nostrum quos aliquam eligendi sed ad?Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat amet esse nihil facilis minus, deleniti quas et iusto ad cumque quam autem! Architecto commodi recusandae accusantium quas non ipsam officiis.</p>
-
-    <!-- Início footer -->
+            <div class="hidden">
+                <p>O Museu WonderLore é uma instituição onde a história, a arte e a cultura se fundem para contar as mais 
+                    facinantes histórias de humanidade.
+                </p><br>
+                <p>Como descrito por especialistas e fontes culturais, o Museu WonderLore é mais do que uma mera instituição cultural, 
+                    ele é um verdadeiro santuário da criatividade, do conhecimento e da beleza, proporcionando aos visitantes uma experiência
+                    imersiva que atravessa tempos e espaços variados.
+                </p>
+                <div class="circulo2"></div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="exposicoes">
+            <h2>Aqui estão algumas de nossas exposições</h2>
+            <div class="conteudo-exposicao">
+                <h2>NOME</h2>
+                <img src="" alt="">
+                <p>idade da peça</p>
+                <p>informações da peça</p>
+                <div><img src="" alt=""></div>
+            </div>
+            <div class="conteudo-exposicao">
+                <h2>NOME</h2>
+                <img src="" alt="">
+                <p>idade da peça</p>
+                <p>informações da peça</p>
+                <div><img src="" alt=""></div>
+            </div>
+            <div class="conteudo-exposicao">
+                <h2>NOME</h2>
+                <img src="" alt="">
+                <p>idade da peça</p>
+                <p>informações da peça</p>
+                <div><img src="" alt=""></div>
+            </div>
+            <div class="conteudo-exposicao">
+                <h2>NOME</h2>
+                <img src="" alt="">
+                <p>idade da peça</p>
+                <p>informações da peça</p>
+                <div><img src="" alt=""></div>
+            </div>
+            <div class="conteudo-exposicao">
+                <h2>NOME</h2>
+                <img src="" alt="">
+                <p>idade da peça</p>
+                <p>informações da peça</p>
+                <div><img src="" alt=""></div>
+            </div>
+            <div class="conteudo-exposicao">
+                <h2>NOME</h2>
+                <img src="" alt="">
+                <p>idade da peça</p>
+                <p>informações da peça</p>
+                <div><img src="" alt=""></div>
+            </div>
+            <div class="conteudo-exposicao">
+                <h2>NOME</h2>
+                <img src="" alt="">
+                <p>idade da peça</p>
+                <p>informações da peça</p>
+                <div><img src="" alt=""></div>
+            </div>
+            <div class="conteudo-exposicao">
+                <h2>NOME</h2>
+                <img src="" alt="">
+                <p>idade da peça</p>
+                <p>informações da peça</p>
+                <div><img src="" alt=""></div>
+            </div>
+            <div class="conteudo-exposicao">
+                <h2>NOME</h2>
+                <img src="" alt="">
+                <p>idade da peça</p>
+                <p>informações da peça</p>
+                <div><img src="" alt=""></div>
+            </div>
+        </section>
+    </main>
     <footer>
-        <div class="footer-content">
-            <div class="footer-social">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
+        <div class="azul">azul</div>
+        <div class="cinza">cinza</div>
+        <div>
+            <div class="informacoes">
+                <img src="" alt="">
+                <h3>ENDEREÇO</h3>
+                <p>o endereço</p>
             </div>
-            <div class="footer-info">
-                <p>&copy; 2024 Museu Nacional. Todos os direitos reservados.</p>
+            <div class="informacoes">
+                <img src="" alt="">
+                <h3>NUMERO DE TELEFONE</h3>
+                <p>numero</p>
             </div>
+            <div class="informacoes">
+                <img src="" alt="">
+                <h3>EMAIL</h3>
+                <a href="email"></a>
+            </div>
+        </div>
+        <div class="mensagem-contato">
+            <form >
+                <div>
+                    <input required="" autocomplete="off" name="email" type="text">
+                    <label for="email">E-mail</label>
+                </div>
+                <div>
+                    <input required="" autocomplete="off" type="text">
+                    <label for="name">Name</label>
+                </div>
+                <div>
+                    <textarea required="" cols="30" rows="1" id="message"></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button>Send message →</button>
+            </form>
+        </div>
+        <div class="agradecimento">
+            <h1>Entrar em contato</h1>
+            <p><strong>Acreditamos que a sustentabilidade é de vital importância.</strong></p>
+            <p>Agradecemos desde ja sua presença por participar de eventos e engajar-se com conteúdo educacional que proporcionamos
+                no museu WonderLore.
+            </p>
+            <div><i class="fa fa-facebook"></i></div>
+            <div><i class="fa fa-twitter"></i></div>
+            <div> <i class="fa fa-instagram"></i></div> 
         </div>
     </footer>
-    <!-- Fim footer -->
+
+
     <script src="script.js"></script>
 </body>
 </html>
