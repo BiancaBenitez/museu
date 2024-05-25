@@ -337,3 +337,16 @@ R1 {
    vertical-align: top;
    padding: 20px 0px 12.5px 12.5px;
 }
+
+/* rodapé */
+
+.footer-content{
+   background-color: #333;
+   text-align: center;
+   padding:5px;
+}
+
+.footer-info {
+   color: #bbb7b7;
+   text-align: center;
+}
