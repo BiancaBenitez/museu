@@ -1,5 +1,5 @@
 
-   /* Ínicio pagina parallax  */
+   /* Ínicio pagina  */
 
    
    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -20,39 +20,34 @@
    }
 
    header {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 30px 100px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 100;
-      
+    
 
    }
-
+   
    .logo {
       font-size: 2em;
       color: #7a7a7a;
       user-select: none;
+      float: left;
+      padding: 20px 150px ;
    }
-
+   
    .navegacao a {
       position: relative;
       font-size: 1.1em ;
       color: #1a1a1a;
       font-weight: 600;
       text-decoration: none;
-      margin-left: 20px;
+      margin: 20px;
       padding: 6px 15px;
       transition: .5s;
+      float: right;
    }
 
    .navegacao a:hover,
    .navegacao a.ativo {
-      color: #fff;
+      color: #ffffff;
+      
    }
  
    .navegacao a span {
@@ -67,66 +62,148 @@
       transform: scale(0);
       opacity: 0;
       transition: .5s;
-      
-
    }
 
    .navegacao a:hover span,
    .navegacao a.ativo span {
       transform: scale(1);
       opacity: 1;
-   }
-    /* 
-   .parallax {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: url(../imagens/fundo-museu.jpeg) no-repeat;
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
       
    }
-
-   #text {
-      position: absolute;
-      font-size: 5em ;
-      color: #93353b ;
-      text-shadow: 2px 4px 5px #f9f9f9;
-   }
-
-   .parallax img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 30%;
-      pointer-events: none;
-   }
-
-   .parallax img#estatua-esquerda {
-      transform: translateX(-50px);
-      margin-top: 429px;
-   }
-
-   .parallax img#estatua-direita {
-      transform: translateX(1400px);
-      margin-top: 389px;
-   }
-
-   .sec {
-      position: relative;
-      background-color: #93353b;
-      padding: 20px;
-      width: 1900px;
-      height: 600px;
+   
+   .imagem-principal {
+     display: flex;
+     clear: both;
      
-      
+   }
+   .imagem-principal img {
+      width: 1900px;
+      height:800px ;
+     
    }
 
-  
+   .circulo1 {
+      background-color: #427bf5;
+      border-radius: 100%;
+      width: 600px;
+      height: 600px;
+      position: absolute;
+      top: 190px;
+      left: 150px;
+      border: 1px solid #2f61ce;
+      box-shadow: 7px #ffffff;
+   }
 
+   .circulo1 h1 {
+      text-align: center; 
+      padding-top: 110px; 
+      color: #ffffff;
+      text-shadow: rgb(73, 71, 71) 1px 0 6px;
+   }
+   
+   .circulo1 p {
+      text-align:center; 
+      margin: 0px 70px;
+      padding-top: 20px;
+      font-size: 1.1em;
+      font-weight: 400 ;
+      color: #ffffff;
+      text-shadow: rgb(82, 80, 80) 1px 0 6px;
+
+   }
+ 
+   .botao {
+      padding:40px;
+      text-align: center;
+   }
+   .button {
+      appearance: none;
+      background-color: transparent;
+      border: 0.125em solid #ffffff;
+      border-radius: 100px;
+      box-sizing: border-box;
+      color: #ffffff;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+      font-size: 16px;
+      font-weight: 600;
+      line-height: normal;
+      margin: 0;
+      min-height: 3.75em;
+      min-width: 0;
+      outline: none;
+      padding: 1em 3.3em;
+      text-align: center;
+      text-decoration: none;
+      transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      will-change: transform;
+   }
+   
+   .button:disabled {
+      pointer-events: none;
+     }
+     
+   .button:hover {
+      color: #000000;
+      background-color: #ffffff;
+      box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+      transform: translateY(-2px);
+   }
+     
+   .button:active {
+      box-shadow: none;
+      transform: translateY(0);
+     }
+
+     .hidden {
+      padding-left: 200px;
+      display: inline-block;
+      position: absolute;
+     }
+     .primeiro-texto {
+      text-align: left;
+      width:500px ;
+      height: 400px;
+      font-weight: 500;
+      font-size: 30px;
+      padding-top: 150px;
+      margin: 5px;      
+     }
+
+     .circulo2 {
+      background-color:#2f61ce;
+      height: 100px;
+      width: 100px;
+      border-radius: 100%;
+     }
+
+     .texto2 {
+      padding-left: 600px;
+      padding: 150px 200px 0px 700px;
+     }
+     .segundo-texto {
+      text-align: left;
+      font-size: 20px;
+      height: 243px;
+      width: 800px;
+     }
+
+     .circulo3 {
+      background-color:#2f61ce;
+      height: 100px;
+      width: 100px;
+      border-radius: 100%;
+      float: right;
+     }
+
+    .caixa {
+      display: block;
+      border: 1px solid red;
+    }
    /*carrossel de imagens  
    .area-fotos {
       display: inline-block;
