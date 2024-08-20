@@ -19,11 +19,10 @@
    }
    
    .logo {
-      font-size: 2em;
-      color: #7a7a7a;
-      user-select: none;
-      float: left;
-      padding: 20px 150px ;
+      width: 300px;
+      height: 80px ;
+      position:absolute;
+      padding-left: 40px;
    }
    
    .navegacao a {
@@ -64,7 +63,8 @@
       opacity: 1;
       
    }
-   
+   /* Fim navegação */
+   /* Início imagem principal */
    .imagem-principal {
      display: flex;
      clear: both;
@@ -72,7 +72,7 @@
    }
    .imagem-principal img {
       width: 1900px;
-      height:800px ;
+      height:900px ;
      
    }
 
@@ -82,7 +82,7 @@
       width: 600px;
       height: 600px;
       position: absolute;
-      top: 190px;
+      top: 240px;
       left: 150px;
       border: 1px solid #2f61ce;
       box-shadow: 7px #ffffff;
@@ -155,21 +155,35 @@
 
      .fundo {
       height: 800px;
+      position: relative;
      }
+
      .hidden {
       padding-left: 200px;
       display: inline-block;
       position: absolute;
      }
+     
+     /* Fim imagem principal */
+     /* Início perfil da empresa */
+     /* Início promessas da empresa */
+
+     .promessas {
+      position: absolute;
+      margin: 140px 100px ;
+      opacity: 0;
+      filter: blur(15px);
+      transform: translateX(100%);
+      transition: all 1s;
+     }
      .primeiro-texto {
       text-align: left;
       width:500px ;
-      height: 400px;
+      height: 250px;
       font-weight: 500;
       font-size: 30px;
-      padding-top: 150px;
       margin: 5px;      
-     }
+   }
 
      .circulo2 {
       background-color:#2f61ce;
@@ -177,10 +191,20 @@
       width: 100px;
       border-radius: 100%;
      }
+     /* Fim promessas */
+     /* Início corporativo */
+     .corporativo {
+      position: absolute;
+      margin: 105px 850px;
+      opacity: 0;
+      filter: blur(15px);
+      transform: translateX(-100%);
+      transition: all 1s;
+     }
 
      .texto2 {
-      padding-left: 600px;
-      padding: 150px 200px 0px 700px;
+      padding-left: 10px;
+      padding: 50px;
      }
      .segundo-texto {
       text-align: left;
@@ -196,6 +220,15 @@
       border-radius: 100%;
       float: right;
      }
+     /* Fim corporativo */
+     .show {
+      opacity: 1;
+      filter: blur(0px);
+      transform: translateX(0%);
+      transition: all 2s;
+     }
+     
+     /* Fim perfil da empresa */
 
     .caixa {
       display:inline-block ;
@@ -277,8 +310,7 @@
       display: inline-block;
       text-align: center;
       margin: 5px;
-      float: left;
-      z-index: 3;
+      float:left;
       padding-top: 30px;
    }
    .endereco, .numerodetelefone, .email {
@@ -297,9 +329,8 @@
   padding-inline: 2em;
   padding-bottom: 0.4em;
   background-color: #ffffff;
-  //background-color: #0a192f;
+  /background-color: #0a192f;
   border-radius: 20px;
-  
 }
 
 .form-field {
@@ -341,10 +372,10 @@
 
 .sendMessage-btn:hover {
   transition: all ease-in-out 0.3s;
-  background-color: #ffffff;
+  background-color: #000000;
   color: #ffffff;
   cursor: pointer;
-  box-shadow: inset 2px 5px 10px #ffffff;
+  box-shadow: inset 2px 5px 10px #000000;
 }
 
 .form-card1 {
@@ -385,228 +416,4 @@
 .facebook, .twitter, .instagram  {
    display: flex;
    flex-direction: row;
-}
-
-   /*carrossel de imagens  
-   .area-fotos {
-      display: inline-block;
-      width: 810px;
-      height: 410px;
-      padding: 12.5px;
-   }
- 
-   .slider {
-      
-      width: 800px;
-      height: 400px;
-      background: #fff;
-      overflow: hidden;
-      background-color: #93353b;
-      margin-bottom: 20px;
-      
-
-   }
-   
-   .slides {
-      width: 400%;
-      height: 400px;
-      display: flex;
-   }
-
-   .slides input {
-      display:none ;
-   }
-
-   .slide {
-      width: 25%;
-      position: relative;
-      transition: 2s;
-   }
-
-   .slide img {
-      width: 800px;
-      
-   }
-
-   .manual-navigation {
-      position: absolute;
-      width: 800px;
-      margin-top: -40px;
-      display: flex;
-      justify-content: center;
-   }
-
-   .manual-btn {
-      border: 2px solid #fff;
-      padding: 5px;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: 0.5s;
-   }
-
-   .manual-btn:not(:last-child){
-      margin-right: 40px;
-   }
-
-   .manual-btn:hover{
-      background-color: #fff;
-   }
-
-   #radio1:checked ~ .first{
-      margin-left: 0;
-   }
-
-   #radio2:checked ~ .first{
-      margin-left: -25%;
-   }
-
-   #radio3:checked ~ .first{
-      margin-left: -50%;
-   }
-
-   #radio4:checked ~ .first{
-      margin-left: -75%;
-   }
-
-   .navigation-auto div{ 
-      border: 2px solid #20a6ff;
-      padding: 5px;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: 1s;
-   }
-
-   .navigation-auto{
-      position: absolute;
-      width: 800px;
-      margin-top: 360px;
-      display: flex;
-      justify-content: center;
-
-   }
-
-   .navigation-auto div:not(:last-child){
-      margin-right: 40px;
-   }
-
-   #radio1:checked ~ .navigation-auto .auto-btn1{
-      background-color: #fff;
-   }
-
-   #radio2:checked ~ .navigation-auto .auto-btn2{
-      background-color: #fff;
-   }
-
-   #radio3:checked ~ .navigation-auto .auto-btn3{
-      background-color: #fff;
-   }
-
-   #radio4:checked ~ .navigation-auto .auto-btn4{
-      background-color: #fff;
-   }
-
- /* Estilos das exposições em destaque 
- .main-header {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-}
-
-.content-header {
-   display: inline-block;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   vertical-align: top;
-   padding: 12px 0px 0px 12.5px;
-}
-
-.header-right {
-   width: 500px;
-   background: #fff;
-   padding: 20px;
-   border-radius: 10px;
-   height: 402px;
-}
-
-.highlighted-exhibitions h1 {
-   font-size: 39px;
-   margin-bottom: 10px;
-   color: #93353b;
-}
-
-.highlighted-exhibitions ul {
-   list-style: none;
-   padding: 0;
-}
-
-.highlighted-exhibitions li {
-   display: flex;
-   align-items: center;
-   margin-bottom: 15px;
-}
-
-.highlighted-exhibitions li a {
-   text-decoration: none;
-   color: #333;
-   display: flex;
-   align-items: center;
-}
-
-.exhibition-icon {
-   width: 50px;
-   height: 50px;
-   margin-right: 15px;
-   border-radius: 5px;
-   object-fit: cover;
-}
-
-.exhibition-info h3 {
-   margin: 0;
-   font-size: 18px;
-}
-
-.exhibition-info p {
-   margin: 0;
-   font-size: 14px;
-   color: #666;
-}
-
-@media (max-width: 768px) {
-   .sec {
-      flex-direction: column;
-   }
-
-   
-
-   .header-right {
-      width: 100%;
-   }
-}
-
-R1 {
-   font-size: 15px;
-   color: #2c0909;
-   font-weight: 600;
-
-}
-
-/* mapa 
-#mapa{
-   display: inline-block;
-   vertical-align: top;
-   padding: 20px 0px 12.5px 12.5px;
-}
-
-/* rodapé 
-
-.footer-content{
-   background-color: #333;
-   text-align: center;
-   padding:5px;
-}
-
-.footer-info {
-   color: #bbb7b7;
-   text-align: center;
 }

@@ -10,24 +10,28 @@
     <title>WonderLore</title>
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" >
+    
 
     <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
     <![endif]-->
 </head>
 <body>
-    <header>
+    <header> 
+        <!-- Início cabeçalho -->
         <section>
-            <h2 class="logo">Logo</h2>
+        <img class="logo" src="imagens/logo.png" alt=""> 
             <nav class="navegacao">
                 <a href="home.html" class="ativo">Home <span></span></a>
                 <a href="sobre.html">Sobre Nós <span></span></a>
                 <a href="contato.html">Contato <span></span></a>
             </nav>
         </section>
+        <!-- Fim cabeçalho -->
+         <!-- Início imagem principal -->
         <section >
             <div class="imagem-principal">
-                <img src="imagens/1900 x 800.png" alt="">
+                <img src="imagens/img-pric.jpeg" alt="">
                 <div class="circulo1">
                     <h1>Museu <br> WonderLore</h1>
                     <p>Segundo Silva e Costa (2021), em sua obra sobre o papel dos museus e na preservação da diversidade cultural,
@@ -42,27 +46,36 @@
                 </div>
              </div>
         </section>
-        <section class="fundo">
-            <div class="hidden">
-
-                <p class="primeiro-texto">Prometemos não apenas ser educativa, mas tambem uma aventura inesquecível, tranformando cada visita em uma exploração única de criatividade e história.
-                </p>
-                <div class="circulo2"></div>
-            </div>
-            <div class="hidden">   
-                <div class="texto2">        
-                   <p class="segundo-texto">O Museu WonderLore é uma instituição onde a história, a arte e a cultura se fundem para contar as mais 
-                        facinantes histórias de humanidade.
-                    <br><br>
-                        Como descrito por especialistas e fontes culturais, o Museu WonderLore é mais do que uma mera instituição cultural, 
-                        ele é um verdadeiro santuário da criatividade, do conhecimento e da beleza, proporcionando aos visitantes uma experiência
-                        imersiva que atravessa tempos e espaços variados.
-                    </p>
-                    <div class="circulo3"></div>
-                </div>
-            </div>
-        </section>
+        <!-- Fim imagem principal -->
+      
     </header>
+       <!-- Início perfil da empresa-->
+       <section class="fundo">
+        <!-- Início promessas de valores -->
+        <div class="promessas">
+
+            <p class="primeiro-texto">Prometemos não apenas ser educativa, mas tambem uma aventura inesquecível, tranformando cada visita em uma exploração única de criatividade e história.
+            </p>
+            <div class="circulo2"></div>
+        </div>
+        <!-- Fim promessas de valores  -->
+         <!-- Início perfil corporativo -->
+        <div class="corporativo">   
+            <div class="texto2">        
+               <p class="segundo-texto">O Museu WonderLore é uma instituição onde a história, a arte e a cultura se fundem para contar as mais 
+                    facinantes histórias de humanidade.
+                <br><br>
+                    Como descrito por especialistas e fontes culturais, o Museu WonderLore é mais do que uma mera instituição cultural, 
+                    ele é um verdadeiro santuário da criatividade, do conhecimento e da beleza, proporcionando aos visitantes uma experiência
+                    imersiva que atravessa tempos e espaços variados.
+                </p>
+                <div class="circulo3"></div>
+            </div>
+        </div>
+        <!-- Fim perfil corporativo -->
+    </section>
+    <!-- Fim perfil da empresa -->
+     <!-- Início caixa de exposições -->
     <main class="caixa">
         <section class="exposicoes">
             <h1 class="meio">Aqui estão algumas de nossas exposições</h2>
@@ -72,21 +85,21 @@
                 <img  class="foto-pequena" src="imagens/50x50.png" alt="">
                 <p  class="idade">idade da peça</p>
                 <p class="informacoes">informações da peça</p>
-                <div><img class="foto-exposicao" src="imagens/350 x 220.png" alt=""></div>
+                <div><img class="foto-exposicao" src="imagens/pintura1.jpeg" alt=""></div>
             </div>
             <div class="conteudo-exposicao">
                 <h2>NOME</h2>
                 <img class="foto-pequena" src="imagens/50x50.png" alt="">
                 <p  class="idade">idade da peça</p>
                 <p class="informacoes">informações da peça</p>
-                <div><img class="foto-exposicao" src="imagens/350 x 220.png" alt=""></div>
+                <div><img class="foto-exposicao" src="imagens/pintura2.jpeg" alt=""></div>
             </div>
             <div class="conteudo-exposicao">
                 <h2>NOME</h2>
                 <img class="foto-pequena"src="imagens/50x50.png" alt="">
                 <p  class="idade">idade da peça</p>
                 <p class="informacoes">informações da peça</p>
-                <div><img class="foto-exposicao" src="imagens/350 x 220.png" alt=""></div>
+                <div><img class="foto-exposicao" src="imagens/pintura3.jpeg" alt=""></div>
             </div>
             <div class="conteudo-exposicao">
                 <h2>NOME</h2>
@@ -128,6 +141,8 @@
         </div>
         </section>
     </main>
+    <!-- Fim caixa de exposiões -->
+     <!-- Início rodapé -->
     <footer class="fundo-footer">
         <div class="cartas2" >
             <div class="informacoes-footer">
@@ -187,8 +202,9 @@
             <div> <i class="instagram"></i></div> 
         </div>
     </footer>
-
+    <!-- Fim rodapé -->
 
     <script src="script.js"></script>
+
 </body>
 </html>
