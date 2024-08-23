@@ -16,3 +16,12 @@ const observer = new IntersectionObserver((entries) => {
 observer.observe(promessa);
 observer.observe(corporativos);
 
+
+document.querySelector('a[href="#contato"]').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector('#contato').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+

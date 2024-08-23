@@ -3,7 +3,7 @@
 
    
    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-   ;
+   
 
    * {
       margin: 0;
@@ -225,6 +225,8 @@
      }
      
      /* Fim perfil da empresa */
+     /* Exposições */
+    
 
     .caixa {
       display:inline-block ;
@@ -278,7 +280,7 @@
       width: 350px;
       height: 220px;
    }
-
+   /* Fim exposição */
    .fundo-footer {
       position: absolute;
       top: 3525px;
@@ -378,7 +380,6 @@
   border-radius: 22px;
   transition: all 0.3s;
   display: inline-block;
-  height: 600px;
   width: 750px;
   position: absolute;
   top:280px ;
@@ -409,10 +410,27 @@
    color: #757575;
 }
 
-.facebook, .twitter, .instagram  {
-   display: flex;
-   flex-direction: row;
+.emaillinks {
+   text-decoration: none;
+   color: #000000;
 }
+.social-links {
+   display: flex;
+   justify-content: left; /* Centraliza as imagens horizontalmente */
+   gap: 20px; /* Espaçamento entre as imagens */
+   margin-top: 20px; /* Espaço acima dos ícones, se necessário */
+}
+
+.social-links a {
+   text-decoration: none; /* Remove a sublinha do link */
+}
+
+.social-links img {
+   width: 50px; /* Define o tamanho das imagens */
+   height: 50px;
+}
+
+
 /* sobre nós */
 #textosobrenos {
    width: 60em;
@@ -479,3 +497,4 @@
    top: 878px;
    background-color: #fff;
 }  
+
