@@ -9,8 +9,6 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.classList.remove('show')
         }
     });
-}, {
-    threshold: 0.5 
 });
 
 observer.observe(promessa);
