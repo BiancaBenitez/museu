@@ -533,12 +533,12 @@
    .imagem-principal img {
       width: 100%;
       height:auto;
-      margin: 10px 0px 0px 0px;
+      margin: 25px 0px 0px 0px;
    }
    
    .circulo1 {
       width: 70%;
-      height: 32%;
+      height: 45%;
       top: 20%;
       left: 15%;
       z-index: 3;
@@ -589,7 +589,7 @@
       margin: 25px 0px;
    }
    .fundo {
-      height: 890px;
+      height: 950px;
       background-color: #c1e0f4;
    }
    .exposicoes  {
@@ -602,10 +602,10 @@
    }
    .cartas1 {
       flex-direction: column;
-      padding-left: 1.5%;
+      padding-left: 7%;
    }
    .fundo-footer {
-      top: 700%;
+      top: 900%;
       width: 100%;
       height: 850px;
       z-index: 2;
@@ -652,5 +652,69 @@
       width: 30px;
       height: 30px;
    }
-} 
-
+   /* sobre nós*/
+   #textosobrenos {
+      top: 15px;
+      z-index: 7;
+      background-color: transparent;
+      }
+      .textosobre {
+         margin: 250px 0px 0px 40px ;
+     } 
+     .textosobre p {
+      width:400px;
+      }
+      #imagemsobre {
+         width: 100%;
+         left: 0px;
+      }
+      .imagemsobreimg img {
+         height: 400px ;
+         width: 460px;
+         left: 0px;
+         opacity: 0.3;
+         top: 200px;
+      }
+      .etec {
+         width: 60%;
+         left: 105px;
+         top: 300px;
+      }
+      .fundo-footer2 {
+            top:1700px;
+            width: 100%px;
+            height: 1200px;
+      }
+      .informacoes-footer {
+         
+         width: 7%;
+         height: 10%;
+         margin: 5px;
+         float:left;
+         padding-top: 80px;
+      }
+      .agradecimento {
+         width: 100%;
+         height: 250px;
+         left: 50px;
+         top: 150px;
+      }
+      .agradecimento h1 {
+         font-size: 40px;
+         width: 450px;
+      }
+      .agradecimento p strong i {
+         font-size: 13px;
+         width: 350px;
+      }
+      
+      .agradecimentop {
+         font-size: 13px;
+         width: 400px;
+      }
+      .social-links img {
+         width: 40px; /* Define o tamanho das imagens */
+         height: 40px;
+      }
+      
+   }
